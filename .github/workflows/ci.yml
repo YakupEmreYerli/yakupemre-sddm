@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Shellcheck installer
+        run: shellcheck install.sh
+
+      - name: Configs have the same keys
+        run: |
+          keys() { grep -E '^[A-Za-z]+=' "$1" | cut -d= -f1 | sort; }
+          diff <(keys Themes/en.conf) <(keys Themes/tr.conf)
+
+      - name: Referenced files exist
+        run: |
+          test -f Main.qml
+          test -f "$(grep -oP '^Screenshot=\K.*' metadata.desktop)"
+          test -f "$(grep -oP '^ConfigFile=\K.*' metadata.desktop)"
+          for c in Themes/*.conf; do
+            bg=$(grep -oP '^Background="\K[^"]*' "$c")
+            test -f "$bg" || { echo "missing $bg in $c"; exit 1; }
+          done

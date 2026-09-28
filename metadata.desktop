@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=yakupemre-sddm
+Description=Glacier lake login screen with a frosted panel, Inter type and minimal power buttons
+Author=Yakup Emre Yerli
+Copyright=(c) 2026 Yakup Emre Yerli; based on sddm-astronaut-theme (c) 2022-2025 Keyitdev
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.0.0
+Website=https://github.com/YakupEmreYerli/yakupemre-sddm
+Screenshot=Previews/preview.jpg
+MainScript=Main.qml
+ConfigFile=Themes/en.conf
+TranslationsDirectory=translations
+Theme-Id=yakupemre-sddm
+Theme-API=2.0
+QtVersion=6
