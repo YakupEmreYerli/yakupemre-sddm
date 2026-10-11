@@ -9,6 +9,10 @@ A calm SDDM login screen: a glacier lake at dusk, a frosted side panel, Inter ty
 
 ![yakupemre-sddm preview](Previews/preview.jpg)
 
+## Sibling project
+
+This is the login screen half of a pair. The lock screen is **[yakupemre-lockscreen](https://github.com/YakupEmreYerli/yakupemre-lockscreen)**: same background, palette, clock and form for Plasma 6. Install both and the screen you see after boot, after `Meta+L` and after waking up is the same one.
+
 ## What's different
 
 This theme is built on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme) by Keyitdev. The layout engine is the same; the login flow and look are reworked:
