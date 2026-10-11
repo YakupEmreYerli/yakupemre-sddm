@@ -7,7 +7,9 @@ A calm SDDM login screen: a glacier lake at dusk, a frosted side panel, Inter ty
 ![Qt 6](https://img.shields.io/badge/Qt-6-41cd52)
 [![CI](https://github.com/YakupEmreYerli/yakupemre-sddm/actions/workflows/ci.yml/badge.svg)](https://github.com/YakupEmreYerli/yakupemre-sddm/actions/workflows/ci.yml)
 
-![yakupemre-sddm preview](Previews/preview.jpg)
+> Türkçe: [README.tr.md](README.tr.md)
+
+![yakupemre-sddm: the login screen with its frosted panel, clock, avatar and password field over a glacier lake at dusk](docs/banner.en.png)
 
 ## Sibling project
 
@@ -53,7 +55,7 @@ Preview without logging out:
 sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/yakupemre-sddm
 ```
 
-The test window renders the real layout; the screenshot above was taken this way.
+The test window renders the real layout; [`Previews/preview.jpg`](Previews/preview.jpg) was taken this way.
 
 ## Avatar
 
